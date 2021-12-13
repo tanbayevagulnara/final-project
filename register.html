@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="shortcut icon" type="image/x-icon" href="logoBlue.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title> register </title>
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    </head>
+    <body>
+        <div class="bodyRegister">
+            <div class="container">
+                <div class="title">
+                    Registration
+                </div>
+                <form action="#">
+                    <div class="user-details">
+                        <div class="input-box">
+                            <span class="details"> 
+                                Name
+                            </span>
+                            <input type="text" placeholder="Enter your name" id="name">
+                        </div>
+    
+                        <div class="input-box">
+                            <span class="details"> 
+                                Surname
+                            </span>
+                            <input type="text" placeholder="Enter your surname" id="surname">
+                        </div>
+    
+                        <div class="input-box">
+                            <span class="details"> 
+                                Email
+                            </span>
+                            <input type="text" placeholder="Enter your email adress" id="email">
+                        </div>
+    
+                        <div class="input-box">
+                            <span class="details"> 
+                                Phone Number
+                            </span>
+                            <input type="text" placeholder="Enter your phone number" id="number">
+                        </div>
+    
+                        <div class="input-box">
+                            <span class="details"> 
+                                Password
+                            </span>
+                            <input type="password" placeholder="Enter your password">
+                        </div>
+    
+                        <div class="input-box">
+                            <span class="details"> 
+                                Confirm Password
+                            </span>
+                            <input type="password" placeholder="Confirm your password" id="password">
+                        </div>
+                    </div>
+                    <div class="gender-details">
+                        <input type="radio" name="gender" id="dot-1">
+                        <input type="radio" name="gender" id="dot-2">
+                        <input type="radio" name="gender" id="dot-3">
+                        <span class="gender-title"> Gender </span>
+                        <div class="category">
+                            <label for="dot-1">
+                                <span class="dot one"></span>
+                                <span class="gender">
+                                    Male
+                                </span>
+                            </label>
+                            <label for="dot-2">
+                                <span class="dot two"></span>
+                                <span class="gender">
+                                    Female
+                                </span>
+                            </label>
+                            <label for="dot-3">
+                                <span class="dot three"></span>
+                                <span class="gender">
+                                    Prefer not to say 
+                                </span>
+                            </label>
+                        </div>
+                        <span class="gender-title"> Your comments </span>
+                    </div>
+                    <div class="textareaRegister">
+                        <textarea id="textR" cols="85" rows="auto"></textarea>
+                    </div>
+                    <div class="button">
+                        <input type="submit" value="Register" onclick="save()">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+    <script>
+        let save = () => {
+            const name = document.getElementById("name");
+            const surname = document.getElementById("surname");
+            const email = document.getElementById("email");
+            const number = document.getElementById("number");
+            const password = document.getElementById("password");
+            const text = document.getElementById("textR");
+
+        let data = "Registered person information " + "\n" +  
+        "\nName: " + name.value + "\n " + 
+        "\nSurname: " + surname.value + "\n" +
+        "\nEmail: " + email.value + "\n " + 
+        "\nPhone Number: " + number.value + "\n " +
+        "\nPassword: " + password.value + "\n" +
+        "\nComments: " + text.value;
+
+        const blob = new Blob([data], {
+            type: "text/plain"
+        });
+        const file = "information.txt";
+
+        let link = document.createElement("a");
+        link.download = file;
+
+            if (window.webkitURL != null) {
+                link.href = window.webkitURL.createObjectURL(blob);
+            } else {
+                link.href = window.URL.createObjectURL(blob);
+                link.style.display = "none";
+                document.body.appendChild(link);
+            }
+            link.click();
+        }
+    </script>
+</html>

@@ -1,0 +1,707 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@media only screen and (max-width: 600px) {
+    /* main page */
+    .infoUni {
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .center {
+        flex-direction: column;
+    }
+    .benefits {
+        flex-direction: column;
+    }
+    /* register page */
+    .container {
+        max-width: 100%;
+    }
+    form .user-details .input-box {
+        margin-bottom: 15px;
+        width: 100%;
+    }
+    form .gender-details .category {
+        width: 100%;
+    }
+    .container form .user-details {
+        max-height: 300px;
+        overflow-y: scroll;
+    }
+    .user-details::-webkit-scrollbar {
+        width: 0;
+    }
+    /* news page */
+    .news1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .newspart1,
+    .newspart2, 
+    .newspart3, 
+    .newspart4 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+    }
+    .mainNews {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+}
+:root {
+    --myfont-family: 'Montserrat', sans-serif;
+    --mycolor: rgb(255, 255, 255);
+    --myblack: rgb(6, 5, 85);
+    --myblue: #1d0168;
+}
+
+/* MAIN PAGE CSS -------------------------------------------------------------- */
+
+.main_box {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(45deg, rgba(148, 0, 0, 0.50), rgba(29,1,104,0.90)), url(sduBackground.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo {
+    padding: 0.1875em 0;
+    padding-top: 0;
+    color: rgb(255, 255, 255);
+    list-style: none;
+    /* font-family: Lucida Handwriting; */
+    font-family: var(--myfont-family);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+.numberBig2 {
+    font-weight: 300;
+    font-size: 18vw;
+    margin-top: 10px;
+    text-shadow: -0.7vw 1vw 0 var(--myblue);
+
+}
+.wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 56px;
+    height: 100vh;
+    background: transparent;
+    padding: 0rem 0.5rem 2rem;
+}
+nav {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+}
+.nav-inner {
+    margin-top: 0.7rem;
+}
+.nav-toggle {
+    position: absolute;
+    top: 1rem;
+    right: -1.8rem;
+    background: var(--mycolor);
+    padding: 5px 9px;
+    font-size: 1.1rem;
+    color: var(--myblack);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+a {
+    display: flex;
+    align-items: center;
+    padding: 8px 10px;
+    margin-bottom: 0.5rem;
+    border-radius: 0rem;
+    color: var(--mycolor);
+    text-decoration: none;
+    font-family: var(--myfont-family);
+    letter-spacing: 1px;
+}
+.active {
+    background: var(--mycolor);
+    color: var(--myblack);
+}
+.another:hover {
+    background: transparent;
+    cursor: unset;
+}
+a:hover {
+    background: var(--mycolor);
+    color: var(--myblack);
+    transition: 0.2s;
+}
+.icon {
+    font-size: 20px;
+    margin-right: 1rem;
+}
+.textM {
+    font-weight: bold;
+}
+.show {
+    width: 200px;
+}
+
+.custom-shape-divider-bottom-1638982074 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1638982074 svg {
+    display: flex;
+    width: calc(107% + 1.3px);
+    height: 35px;
+}
+
+.custom-shape-divider-bottom-1638982074 .shape-fill {
+    fill: #ffffff;
+}
+
+.custom-shape-divider-top-1638981656 {
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+.custom-shape-divider-top-1638981656 svg {
+    display: flex;
+    width: calc(107% + 1.3px);
+    height: 35px;
+}
+
+.custom-shape-divider-top-1638981656 .shape-fill {
+    fill: #ffffff;
+}
+
+body, html {
+    height: 100%;
+}
+
+.smth1 {
+    height: auto;
+    background-image:  linear-gradient(135deg, rgba(123, 97, 196, 0.5), rgba(190, 82, 109, 0.9)), url(sduInside.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.columnClass {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-family: var(--myfont-family);
+    color: rgb(255, 248, 248);
+}
+.lineone {
+    font-size: 3vw;
+    text-indent: 9.25vw;
+    text-align: left;
+    margin-top: 50px;
+}
+.linetwo {
+    margin-top: 20px;
+    font-size: 3vw;
+    text-align: left;
+    text-indent: 20.75vw;
+}
+.linethree {
+    line-height: 1.5;
+    text-align: left;
+    text-indent: 45vw;
+    font-size: 8vw;
+    text-shadow: -0.5vw 0.5vw 0 var(--myblue);
+}
+.linefour {
+    line-height: 1.5;
+    text-align: left;
+    text-indent: 28vw;
+    font-size: 10vw;
+    text-shadow: -0.5vw 0.5vw 0 var(--myblue);
+}
+
+.center {
+    width: 100%;
+    background-color: var(--myblue);
+    display: flex;
+    flex-direction: column;
+}
+.infoUni {
+    display: flex;
+    flex-direction: row;
+}
+.big-logo {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    float: left;
+    align-items: center;
+    text-align: center;
+}
+.uniBig {
+    padding: 0.1875em 0;
+    padding-top: 0;
+    color: rgb(252, 241, 241);
+    list-style: none;
+    font-family: var(--myfont-family);
+}
+.big-Uni {
+    font-weight: 600;
+    font-size: 2.7em;
+    margin-top: 20px;
+}
+.footer-information {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    color: #ffffff;
+    list-style: none;
+    margin: 50px;
+    font-family: var(--myfont-family);
+    text-align: center;
+}
+.contact-column {
+    list-style-type: none;
+}
+.university-name {
+    padding: 0.1875em 0;
+    padding-top: 0;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    font-size: 1.33333em;
+}
+.address {
+    margin-top: 15px;
+}
+.phone-number {
+    margin-top: 5px;
+}
+.last {
+    margin-top: 30px;
+}
+.social-links {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.social {
+    list-style-type: none;
+    display: inline;
+    color: var(--mycolor);
+    font-weight: bold;
+    font-size: 20px;
+    display: inline-flex;
+}
+.links {
+    display: flex;
+    align-items: center;
+    padding: 8px 10px;
+    margin-bottom: 0.5rem;
+    border-radius: 1.5rem;
+    color: var(--mycolor);
+    text-decoration: none;
+    font-family: var(--myfont-family);
+    letter-spacing: 1px;
+}
+
+/* REGISTER PAGE CSS -------------------------------------------------------------- */
+
+.bodyRegister {
+    font-family: var(--myfont-family);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, rgba(148, 0, 0, 0.50), rgba(29,1,104,0.90));
+}
+.container {
+    padding-left: 20px;
+    margin: 20px;
+    max-width: 600px;
+    width: 100%;
+    height: 100%;
+    max-height: 700px;
+    background: #fff;
+    padding: 25px 30px;
+    border-radius: 5px;
+    margin-left: 10px;
+    flex-wrap: wrap;
+}
+.title {
+    font-size: 25px;
+    font-weight: 500;
+}
+form .user-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+form .user-details .input-box {
+    margin: 10px 0 6px 0;
+    width: calc(100% / 2 - 20px);
+}
+.user-details .input-box .details {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.input-box input {
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+.input-box input:focus, 
+.input-box input:valid {
+    border-color: rgba(29,1,104,0.90);
+}
+form .gender-details .gender-title {
+    font-size: 20px;
+    font-weight: 500;
+}
+form .gender-details .category {
+    display: flex;
+    width: 80%;
+    margin: 14px 0;
+    justify-content: space-between;
+    margin-left: 10px;
+}
+.gender-details .category label {
+    display: flex;
+    align-items: center;
+}
+.gender-details .category .dot {
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    background: #d9d9d9;
+    margin-right: 10px;
+    border: 5px solid transparent;
+}
+#dot-1:checked ~ .category label .one,
+#dot-2:checked ~ .category label .two, 
+#dot-3:checked ~ .category label .three {
+    border-color: #d9d9d9;
+    background-color: rgba(29,1,104,0.90);
+}
+form input[type="radio"] {
+    display: none;
+}
+form .button {
+    height: 45px;
+    margin: 45px 0;
+    transition: 1s;
+}
+form .button input {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    background: linear-gradient(135deg, rgba(148, 0, 0, 0.50), rgba(29,1,104,0.90));
+}
+form .button input:hover {
+    background: linear-gradient(-135deg, rgba(148, 0, 0, 0.50), rgba(29,1,104,0.90));;
+}
+.textareaRegister {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* NEWS PAGE CSS -------------------------------------------------------------- */
+
+.mainNews1 {
+    margin: 0 20px 20px 20px;
+    padding: 0 20px 20px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.mainNews {
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.mainText {
+    font-family: 'Playfair Display', serif;
+    color: rgb(236, 206, 206);
+}
+.video {
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+}
+
+.custom-shape-divider-bottom-1639086316 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1639086316 svg {
+    position: relative;
+    display: block;
+    width: calc(156% + 1.3px);
+    height: 24px;
+}
+
+.custom-shape-divider-bottom-1639086316 .shape-fill {
+    fill: #FFFFFF;
+}
+
+.newsContainer {
+    margin: 20px;
+    padding: 20px;
+}
+.newsChild {
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(63, 21, 21);
+}
+.news1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.newspart1 {
+    margin: 20px;
+    padding: 20px;
+    width: 50%;
+    float: left;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.text {
+    font-size: 25px;
+}
+.headlineYears {
+    font-size: 33px;
+    margin-bottom: 10px;
+    color: rgb(255, 255, 255);
+}
+.headline {
+    font-size: 33px;
+    margin-bottom: 10px;
+    color: rgb(22, 15, 121);
+}
+.account {
+    font-size: 20px;
+}
+.newspart2 {
+    margin: 20px;
+    padding: 20px;
+}
+.imageNews {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+}
+.news2 {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.newspart3 {
+    margin: 20px;
+    padding: 20px;
+}
+.newspart4 {
+    margin: 20px;
+    padding: 20px;
+    width: 50%;
+    float: right;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+/* HISTORY PAGE CSS -------------------------------------------------------------- */
+
+.mainHistory {
+    display: flex;
+    text-align: center;
+    font-family: var(--myfont-family);
+    justify-content: center;
+    margin: 20px;
+}
+.historyText {
+    color: var(--myblue);
+    width: 0ch;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: text 6s steps(20) infinite;
+    border-right: 3px solid var(--myblue);
+}
+@keyframes text {
+    70% {
+        width: 15ch;
+    }
+}
+
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+      width: 70%;
+      margin: auto;
+}
+.imageHistory {
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+}
+.custom-shape-divider-top-1639391212 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-top-1639391212 svg {
+    position: relative;
+    display: block;
+    width: calc(123% + 1.3px);
+    height: 90px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-top-1639391212 .shape-fill {
+    fill: #FFFFFF;
+}
+
+.searchBar {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(45deg, rgba(148, 0, 0, 0.50), rgba(29,1,104,0.90)), url(girlsInSaukele.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search-container {
+    display: flex;
+    justify-content: center;
+}
+
+.searchHistory {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    font-family: var(--myfont-family);
+    color: var(--myblue);
+}
+.searchI {
+    width: 180px;
+    height: 50px;
+    padding: 5px;
+    border-radius: 5px;
+    border: transparent;
+}
+.searchB {
+    height: 50px;
+    width: 70px;
+    padding: 5px;
+    border-radius: 5px;
+    border: transparent;
+}
+
+.coursesHistory {
+    margin-top: 200px;
+    font-family: var(--myfont-family);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.courseH {
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+}
+.courseH:hover {
+    color: var(--myblue);
+}
+
+.searchSection {
+    margin: 0;
+    padding: 20px;
+}
+
+.textHistory {
+    font-family: var(--myfont-family);
+    color: var(--myblue);
+    display: flex;
+    justify-content: center;
+}
+
+.searchImages {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.imagesH {
+    width: 200px;
+    height: auto;
+    box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    position: relative;
+}

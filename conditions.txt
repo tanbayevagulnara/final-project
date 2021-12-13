@@ -1,0 +1,37 @@
+number of pages 10			done
+i					done
+hr					done
+textarea				done
+ul					done
+
+ol
+
+github
+
+colors 					done
+
+4 flexbox containers			
+
+grid system				
+
+5 buttons bootstrap			1 - search
+					2 - register
+					
+
+2 tables bootstrap
+
+tailwind
+
+mobile adaptable			done
+
+date
+
+number
+
+text					done
+
+radio					done
+
+checkbox
+
+vue.js 
