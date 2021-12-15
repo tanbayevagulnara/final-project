@@ -705,7 +705,6 @@ form .button input:hover {
     box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     position: relative;
 }
-
 /* CAMPUS PAGE CSS -------------------------------------------------------------- */
 
 .campusMain {
@@ -725,7 +724,8 @@ form .button input:hover {
     justify-content: center;
     font-family: var(--myfont-family);
     color: rgb(37, 37, 112);
-    font-size: 3vw;
+    font-size: 5vw;
+    text-shadow: 2px 10px #c92a2a;
 }
 .campusHome {
     display: flex;
@@ -736,10 +736,132 @@ form .button input:hover {
     font-size: 1.5vw;
     font-weight: 1000;
 }
+.classJoin {
+    margin: 30px 30px 45px 30px;
+    font-family: var(--myfont-family);
+    text-align: center;
+    font-size: 1.5vw;
+}
 .generalReviews {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 .generalLeft {
-    
+    float: left;
+    width: 70%;
+    background-color: rgb(221, 191, 214);
+    border-radius: 3px;
+    box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.reviewsLeft {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.part1 {
+    margin: 0 20px 20px 20px;
+    align-items: center;
+    font-family: var(--myfont-family);
+    color: rgb(37, 37, 156);
+    padding: 20px;
+}
+#liClass {
+    margin-top: 10px;
+    font-size: 1.5vw;
+}
+hr.hrClass {
+    border: 0.1px solid rgb(37, 37, 156);
+}
+.part2 {
+    margin: 0;
+    padding: 0;
+}
+.graduatesImage {
+    display: flex;
+    justify-content: center;
+}
+.graduateImg {
+    max-width: 600px;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+}
+.opinion {
+    display: flex;
+    padding: 10px;
+    flex-wrap: wrap;
+    font-family: var(--myfont-family);
+    gap: 20px;
+    justify-content: center;
+}
+.op {
+    padding: 10px;
+    max-width: 350px;
+    max-height: 250px;
+    background-color: rgb(255, 255, 255);
+}
+.oppart1 {
+    margin-bottom: 10px;
+    color: var(--myblue);
+    background-color: rgb(179, 237, 245);
+}
+.oppart2 {
+    color: #c92a2a;
+    font-size: 1vw;
+}
+.generalRight {
+    float: right;
+    width: 30%;
+}
+.graduates {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.image1Graduates {
+    display: flex;
+    justify-content: center;
+}
+.imageGraduates {
+    max-width: 250px;
+    width: 100%;
+    height: auto;
+    padding: 10px;
+}
+.reviews {
+    padding: 20px;
+    font-family: var(--myfont-family);
+    color: var(--myblue);
+}
+.reviewspart1 {
+    color: hsl(0, 0, 0);
+    font-size: 1vw;
+}
+
+.social-linksCampus {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.socialCampus {
+    list-style-type: none;
+    display: inline;
+    font-weight: bold;
+    font-size: 20px;
+    display: inline-flex;
+}
+.linksCampus {
+    display: flex;
+    align-items: center;
+    padding: 8px 10px;
+    margin-bottom: 0.5rem;
+    border-radius: 1.5rem;
+    color: grey;
+    text-decoration: none;
+    font-family: var(--myfont-family);
+    letter-spacing: 1px;
 }

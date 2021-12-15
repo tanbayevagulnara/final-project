@@ -4,7 +4,7 @@ hr					done
 textarea				done
 ul					done
 
-ol
+ol					done
 
 github					1 done
 
