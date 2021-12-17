@@ -57,6 +57,11 @@
         justify-content: center;
         flex-direction: column;
     }
+    .seperation {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 }
 :root {
     --myfont-family: 'Montserrat', sans-serif;
@@ -424,24 +429,18 @@ form .gender-details .category {
 form input[type="radio"] {
     display: none;
 }
-form .button {
-    height: 45px;
-    margin: 45px 0;
-    transition: 1s;
+#app {
+    font-family: var(--myfont-family);
 }
-form .button input {
-    height: 100%;
+.button-md-raised-md-primary {
     width: 100%;
-    outline: none;
-    color: #fff;
-    font-size: 18px;
-    font-weight: 500;
-    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
     letter-spacing: 1px;
-    background: linear-gradient(135deg, rgba(148, 0, 0, 0.50), rgba(29,1,104,0.90));
-}
-form .button input:hover {
-    background: linear-gradient(-135deg, rgba(148, 0, 0, 0.50), rgba(29,1,104,0.90));;
+    font-size: 1.5vw;
+    background: linear-gradient(215deg, rgba(148, 0, 0, 0.50), rgba(29,1,104,0.90));
+    color: hsl(0, 0%, 100%);
 }
 .textareaRegister {
     display: flex;
@@ -554,8 +553,11 @@ form .button input:hover {
     justify-content: center;
 }
 .newspart3 {
+    display: flex;
     margin: 20px;
     padding: 20px;
+    justify-content: center;
+    align-items: center;
 }
 .newspart4 {
     margin: 20px;
@@ -704,6 +706,10 @@ form .button input:hover {
     height: auto;
     box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     position: relative;
+    transition: all .2s ease-in-out; 
+}
+.imagesH:hover {
+    transform: scale(1.1);
 }
 /* CAMPUS PAGE CSS -------------------------------------------------------------- */
 
@@ -829,6 +835,10 @@ hr.hrClass {
     width: 100%;
     height: auto;
     padding: 10px;
+    transition: all .2s ease-in-out; 
+}
+.imageGraduates:hover {
+    transform: scale(1.5);
 }
 .reviews {
     padding: 20px;
@@ -865,3 +875,129 @@ hr.hrClass {
     font-family: var(--myfont-family);
     letter-spacing: 1px;
 }
+
+/* CLUBS PAGE CSS -------------------------------------------------------------- */
+
+.clubsContainer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.seperation {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.club-names {
+    display: flex;
+    float: left;
+    width: 25%;
+    height: 400px;
+}
+.club-number {
+    background-color: var(--myblue);
+    color: hsl(0, 0%, 100%);
+    border-radius: 3px;
+    box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    font-family: var(--myfont-family);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px;
+    padding: 20px;
+    gap: 20px;
+}
+.club-need {
+    display: flex;
+    float: right;
+    width: 75%;
+    height: 400px;
+}
+.info-club {
+    background-color: var(--myblue);
+    color: hsl(0, 0%, 100%);
+    border-radius: 3px;
+    box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    font-family: var(--myfont-family);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px;
+    padding: 20px;
+    gap: 20px;
+}
+.h2-club {
+    font-size: 2vw;
+    text-align: center;
+}
+.h3-club {
+    font-size: 1.5vw;
+    text-align: center;
+}
+.h4-club {
+    font-size: 1.3vw;
+}
+
+
+.clubs-general {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+.clubs-general-intro {
+    font-family: var(--myfont-family);
+    color: var(--myblue);
+    margin: 30px;
+}
+.clubs-general-pics {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.pics-clubs-general-1 {
+    margin: 20px;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    transition: all .2s ease-in-out; 
+}
+.pics-clubs-general-1:hover {
+    transform: scale(1.1);
+}
+.clubs-general-opinion {
+    border-style: solid;
+    border-color: var(--myblue);
+}
+.clubs-general-margin {
+    margin: 20px;
+    font-family: var(--myfont-family);
+    color: var(--myblue);
+}
+.pics-clubs-general-2 {
+    margin: 20px;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    transition: opacity 0.4s ease-in-out;
+}
+.table-club {
+    margin: 40px;
+    padding: 20px;
+    justify-content: center;
+    font-family: var(--myfont-family);
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #DDD;
+}
+  
+tr:hover {background-color: #6d7575;}

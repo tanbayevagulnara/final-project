@@ -18,7 +18,7 @@ grid system
 					2 - register
 					
 
-2 tables bootstrap
+2 tables bootstrap			1 done
 
 tailwind
 

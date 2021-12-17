@@ -6,6 +6,10 @@
         <link rel="stylesheet" href="style.css">
         <title> register </title>
         <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+        <script src="https://unpkg.com/babel-standalone/babel.min.js"></script>
+        <script src="https://unpkg.com/vue/dist/vue.min.js"></script>
+        <script src="https://unpkg.com/vue-material@beta"></script>
     </head>
     <body>
         <div class="bodyRegister">
@@ -87,46 +91,46 @@
                     <div class="textareaRegister">
                         <textarea id="textR" cols="85" rows="auto"></textarea>
                     </div>
-                    <div class="button">
-                        <input type="submit" value="Register" onclick="save()">
+                    <div id="app">
+                        <md-button class="button-md-raised-md-primary" @click="download">Register</md-button>
                     </div>
                 </form>
             </div>
         </div>
     </body>
     <script>
-        let save = () => {
-            const name = document.getElementById("name");
-            const surname = document.getElementById("surname");
-            const email = document.getElementById("email");
-            const number = document.getElementById("number");
-            const password = document.getElementById("password");
-            const text = document.getElementById("textR");
+        Vue.use(VueMaterial.default)
 
-        let data = "Registered person information " + "\n" +  
-        "\nName: " + name.value + "\n " + 
-        "\nSurname: " + surname.value + "\n" +
-        "\nEmail: " + email.value + "\n " + 
-        "\nPhone Number: " + number.value + "\n " +
-        "\nPassword: " + password.value + "\n" +
-        "\nComments: " + text.value;
+        var example = {
+            methods:{
+                download: function(){
+                    let name = document.getElementById("name");
+                    let surname = document.getElementById("surname");
+                    let email = document.getElementById("email");
+                    let number = document.getElementById("number");
+                    let password = document.getElementById("password");
+                    let text = document.getElementById("textR");
 
-        const blob = new Blob([data], {
-            type: "text/plain"
-        });
-        const file = "information.txt";
+                    let data = "Registered person information " + "\n" +  
+                    "\nName: " + name.value + "\n " + 
+                    "\nSurname: " + surname.value + "\n" +
+                    "\nEmail: " + email.value + "\n " + 
+                    "\nPhone Number: " + number.value + "\n " +
+                    "\nPassword: " + password.value + "\n" +
+                    "\nComments: " + text.value;
 
-        let link = document.createElement("a");
-        link.download = file;
 
-            if (window.webkitURL != null) {
-                link.href = window.webkitURL.createObjectURL(blob);
-            } else {
-                link.href = window.URL.createObjectURL(blob);
-                link.style.display = "none";
-                document.body.appendChild(link);
+                    var blob = new Blob([ data ], { "type" : "text/plain" });
+                    let link = document.createElement('a')
+                    link.href = window.URL.createObjectURL(blob)
+                    link.download = 'information.txt'
+                    link.click()
+                }
             }
-            link.click();
         }
+
+        var app = new Vue(example)
+
+        app.$mount("#app");
     </script>
 </html>
