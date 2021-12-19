@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" type="image/x-icon" href="logoBlue.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content = "width = device - width, initial-scale = 1.0">
+    <title>engineer</title>
+    <link rel = "stylesheet" href = "style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Playfair+Display:ital,wght@1,500&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+</head>
+<style>
+    .link ul li::after{
+content:'';
+width:0%;
+height:3px;
+background:#87CEFA;
+margin:auto;
+display:block;
+transition:0.3s;
+}
+p.border{
+  border-style: solid;
+  border-color: #87CEFA;
+  border-radius:10px;
+}
+.grid-container {
+  display: grid;
+  grid-gap: 10px;
+  background-image: url('https://onehack.us/uploads/default/original/3X/7/6/7648a38ba1412e336f9a24086421b77c0cd491b6.jpeg');
+  padding: 10px;
+}
+.grid-item {
+  background-color: rgba(0, 0, 0, 0.6);
+  text-align: center;
+  padding: 20px;
+  font-size: 30px;
+  color:rgb(255,255,255);
+}
+.item1 {
+  grid-column: 1 / span 3;
+  grid-row: 1;
+}
+
+</style>
+<body>
+<section class = "first" style = "background-image:linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url('https://sdu.edu.kz/wp-content/uploads/2021/11/infomationsystems.jpg');
+">
+    <nav>
+        <div class = "link">
+            <ul>
+                <li><a href="main.html">Main page</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="history.html">About us</a></li>
+                <li><a href="register.html">Registration</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class = "header" style="font-family: 'Montserrat', sans-serif;">
+        <h1 style = "font-size:5vw;">Faculty of Engineering and Natural sciences</h1>
+        <p style = "font-size:3vw;">
+            Learn from the best in IT!</p>
+    </div>
+</section>
+<section id = "aboutus" style="padding: 20px;">
+    <h3 class="font" style = "font-size:4vw;position:relative;text-align:center; ">About our Faculty</h3>
+    <p class = "border" style = " position:relative; font-size:2vw;color:#777;" >
+        The main areas taught at the Faculty of Engineering cover fundamental and advanced knowledge in the development of integrated web applications, algorithms, software designing, database systems, discrete mathematics, logical programming, cryptography, computer networks, computer simulation, and others. Additionally, information architecture, design, and processing in the information systems framework are practiced. Final year students in Mathematics are expected to study specific pedagogical issues at schools and other educational institutions.
+        The Faculty of Engineering & Natural Sciences prepares future specialists in IT and technical areas.
+        In our undergraduate specialties degree programs, students become high-level specialists with technical and management skills. They are familiarized with various areas in IT, and mathematics and they choose what they want to do in the before they choose their future specialism, whether it is game, from areas such as mobile or web application development, 3D modeling, data analysis, machine learning, artificial intelligence, and or even more.</p>
+</section>
+<section class = "programs">
+    <h1 class ="font"style = "font-size:4vw;">Our programs</h1>
+    <div class="flex-container">
+        <div class = "hth">
+            <img class="imgRight" src = "https://get.wallhere.com/photo/minimalism-computer-multiple-display-simple-background-clocks-desk-lamp-programming-1442893.jpg" style="width: 100%;
+            max-width: 400px;
+            height: auto;">
+            <h2 style = "color:#87CEFA">Information Systems</h2>
+            <p style = "color:#777; font-size:2vw;padding:10px;">
+                Information Systems programme prepares students to work in computer science fields, such as system administrators, software developers, DevOps specialists, network engineers, cybersecurity specialists, IT managers, project managers, computer systems analyst, business analysts, UX/UI designers, 3D animators and game developers, and others.</p>
+        </div>
+        <div class = "hth">
+            <img class="imgRight" src = "https://img3.goodfon.com/original/2560x1440/1/41/minimalizm-monitor-kompyuter.jpg" style="width: 100%;
+            max-width: 400px;
+            height: auto;">
+            <h2 style = "color:#87CEFA;">Computer Systems and Software</h2>
+            <p style = "color:#777; font-size:2vw;padding:10px;">
+                This program prepares students for work as professionals in computer science fields, such as software developers, software project managers, data engineers, data scientists, software testers, UX/UI specialists, IoT engineers and many other professions in the field. </p>
+        </div>
+        <div class = "hth">
+            <img class="imgRight" src = "https://thumbs.dreamstime.com/b/workspace-workplace-icons-elements-minimalistic-style-color-education-process-flat-design-vector-48543557.jpg" style="width: 100%;
+            max-width: 400px;
+            height: auto;">
+            <h2 style = "color:#87CEFA">Mathematical and Computer modeling</h2>
+            <p style = "color:#777; font-size:2vw;padding:10px;">The specialty is designed for those who want to study the field of mathematical and computer modeling in the analysis of applied problems, the use of numerical methods in solving mathematical problems arising in production and technological activities.</p>
+        </div>
+        <div class = "hth">
+            <img class="imgRight" src = "https://wallpapertops.com/walldb/original/0/7/f/82860.jpg" style="width: 100%;
+            max-width: 400px;
+            height: auto;">
+            <h2 style = "color:#87CEFA">Mathematics (scientific)</h2>
+            <p style = "color:#777; font-size:2vw;padding:10px;"> Training of highly qualified specialists combining in-depth knowledge of mathematics with the skills of creative thinking, research activities that are able to independently formulate new goals, tasks of scientific research, evaluate the innovative potential of scientific development. </p>
+        </div>
+    </div>
+</section>
+<div class="grid-container" style="display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+font-family: 'Montserrat', sans-serif;">
+    <div class="grid-item item1" style="font-size: 2vw;">
+        <h1  class="font" style = "color:#FFFFFF;">You still have questions?</h1>
+        <p  class="font" style = "color:#FFFFFF">You can ask them by our email :ens@sdu.edu.kz</p>
+        <p  class="font" style = "color:#FFFFFF;">Down below you can register to our Team building! Just fill the blankets</p>
+    </div>
+    <div class="grid-item item2" style="font-size: 2vw;">
+        <label for="age">Enter your age:</label>
+        <input type="number" id="age" name="age">
+        <input type="submit">
+    </div>
+    <div class="grid-item item3" style="font-size: 2vw;">Enter program that you interested:
+        <br>
+        <input type = "checkbox">Information Systems<br>
+        <input type = "checkbox">Computer Systems and Software<br>
+        <input type = "checkbox">Mathematical and Computer modeling<br>
+        <input type = "checkbox">Mathematics (scientific)<br>
+    </div>
+    <div class="grid-item item4" style="font-size: 2vw;"> <label for="day">Enter day you able:</label>
+        <input type="date" id="day" name="day">
+        <input type="submit"></div>
+    </div>
+    <div id = "computed_props" style="margin: 30px; padding: 30px; display: flex; flex-direction: column; justify-content: center; font-family: 'Montserrat', sans-serif;
+    font-size: 2vw;">
+        <h1> Money currency from dollars to tenge </h1>
+        <br>
+        Dollars : <input type = "text" v-model = "dollar" style="width: 200px;">
+        <br>
+        Tenge : <input type = "text" v-model = "tenge" style="width: 200px;">
+    </div>
+    
+    
+    <script type = "text/javascript">
+             var vm = new Vue({
+                el: '#computed_props',
+                data: {
+                   dollar : 0,
+                   tenge:0
+                },
+                methods: {
+                },
+                computed :{
+                },
+                watch : {
+                   dollar:function(val) {
+                      this.dollar = val;
+                      this.tenge = val * 400;
+                   },
+                   tenge : function (val) {
+                      this.dollar = val/ 400;
+                      this.tenge = val;
+                   }
+                }
+             });
+          </script>
+
+</body>
+<script>
+    var today = new Date();
+    var dd = today.getDate();
+    var mm = today.getMonth() + 1; //January is 0!
+    var yyyy = today.getFullYear();
+    
+    if (dd < 10) {
+       dd = '0' + dd;
+    }
+    
+    if (mm < 10) {
+       mm = '0' + mm;
+    } 
+        
+    today = yyyy + '-' + mm + '-' + dd;
+    document.getElementById("day").setAttribute("max", today);
+</script>
+</html>

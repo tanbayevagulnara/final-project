@@ -10,28 +10,28 @@ github					1 done
 
 colors 					done
 
-4 flexbox containers			
+4 flexbox containers			done	
 
-grid system				
+grid system				done
 
 5 buttons bootstrap			1 - search
 					2 - register
 					
 
-2 tables bootstrap			1 done
+2 tables bootstrap			2 done
 
-tailwind
+tailwind				done
 
 mobile adaptable			done
 
-date
+date					done
 
-number
+number					done
 
 text					done
 
 radio					done
 
-checkbox
+checkbox				done
 
-vue.js 
+vue.js 					done
