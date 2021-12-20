@@ -62,6 +62,32 @@
         flex-direction: column;
         justify-content: center;
     }
+    .divisionCampus {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .graduates {
+        display: flex;
+        width: 250px;
+    }
+    .seperation {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .club-names {
+        display: flex;
+        width: 30%;
+        height: 300px;
+    }
+    .club-need {
+        display: flex;
+    }
+    .imageNews {
+        width: 100px;
+    }
 }
 :root {
     --myfont-family: 'Montserrat', sans-serif;
@@ -96,10 +122,8 @@
 }
 .numberBig2 {
     font-weight: 300;
-    font-size: 18vw;
     margin-top: 10px;
     text-shadow: -0.7vw 1vw 0 var(--myblue);
-
 }
 .wrapper {
     position: fixed;
@@ -396,6 +420,11 @@ form .user-details .input-box {
 .input-box input:valid {
     border-color: rgba(29,1,104,0.90);
 }
+.category {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
 form .gender-details .gender-title {
     font-size: 20px;
     font-weight: 500;
@@ -520,7 +549,7 @@ form input[type="radio"] {
     flex-direction: column;
 }
 .text {
-    font-size: 25px;
+    font-size: 2vw;
 }
 .headlineYears {
     font-size: 33px;
@@ -528,12 +557,12 @@ form input[type="radio"] {
     color: rgb(255, 255, 255);
 }
 .headline {
-    font-size: 33px;
+    font-size: 2.8vw;
     margin-bottom: 10px;
     color: rgb(22, 15, 121);
 }
 .account {
-    font-size: 20px;
+    font-size: 1.4vw;
 }
 .newspart2 {
     margin: 20px;
@@ -729,7 +758,7 @@ form input[type="radio"] {
     justify-content: center;
     font-family: var(--myfont-family);
     color: rgb(37, 37, 112);
-    font-size: 5vw;
+    font-size: 10vw;
     text-shadow: 2px 10px #c92a2a;
 }
 .campusHome {
@@ -738,7 +767,6 @@ form input[type="radio"] {
     gap: 20px;
     text-align: center;
     align-items: center;
-    font-size: 1.5vw;
     font-weight: 1000;
 }
 .classJoin {
@@ -749,7 +777,9 @@ form input[type="radio"] {
 }
 .generalReviews {
     display: flex;
-    flex-direction: row;
+}
+.divisionCampus {
+    display: flex;
     flex-wrap: wrap;
 }
 .generalLeft {
@@ -774,7 +804,6 @@ form input[type="radio"] {
 }
 #liClass {
     margin-top: 10px;
-    font-size: 1.5vw;
 }
 hr.hrClass {
     border: 0.1px solid rgb(37, 37, 156);
@@ -814,7 +843,6 @@ hr.hrClass {
 }
 .oppart2 {
     color: #c92a2a;
-    font-size: 1vw;
 }
 .generalRight {
     float: right;
@@ -823,6 +851,7 @@ hr.hrClass {
 .graduates {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     justify-content: center;
 }
 .image1Graduates {
@@ -846,7 +875,9 @@ hr.hrClass {
 }
 .reviewspart1 {
     color: hsl(0, 0, 0);
-    font-size: 1vw;
+    font-size: 15px;
+    max-width: 300px;
+    width: 100%;
 }
 
 .social-linksCampus {
@@ -884,7 +915,6 @@ hr.hrClass {
 }
 .seperation {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
 }
 .club-names {
@@ -904,7 +934,7 @@ hr.hrClass {
     justify-content: center;
     margin: 20px;
     padding: 20px;
-    gap: 20px;
+    gap: 10px;
 }
 .club-need {
     display: flex;
@@ -926,15 +956,15 @@ hr.hrClass {
     gap: 20px;
 }
 .h2-club {
-    font-size: 2vw;
+    font-size: 2.7vw;
     text-align: center;
 }
 .h3-club {
-    font-size: 1.5vw;
     text-align: center;
+    font-size: 120%;
 }
 .h4-club {
-    font-size: 1.3vw;
+    font-size: 1.7vw;
 }
 
 
