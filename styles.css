@@ -253,26 +253,28 @@ body, html {
     text-indent: 9.25vw;
     text-align: left;
     margin-top: 50px;
+    text-shadow: 0.2vw 0.2vw 0 rgb(89, 4, 145);
 }
 .linetwo {
     margin-top: 20px;
     font-size: 3vw;
     text-align: left;
     text-indent: 20.75vw;
+    text-shadow: 0.2vw 0.2vw 0 rgb(89, 4, 145);
 }
 .linethree {
     line-height: 1.5;
     text-align: left;
     text-indent: 45vw;
     font-size: 8vw;
-    text-shadow: -0.5vw 0.5vw 0 var(--myblue);
+    text-shadow: -0.5vw 0.5vw 0 rgb(89, 4, 145);
 }
 .linefour {
     line-height: 1.5;
     text-align: left;
     text-indent: 28vw;
     font-size: 10vw;
-    text-shadow: -0.5vw 0.5vw 0 var(--myblue);
+    text-shadow: -0.5vw 0.5vw 0 rgb(89, 4, 145);
 }
 
 .center {
